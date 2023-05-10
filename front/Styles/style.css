@@ -1,0 +1,27 @@
+body{
+    color: white;
+    background-image: url("/front/image/background.jpg");    font-size: 25px;
+    text-align: center;
+}
+
+body label{
+    border-radius: 2px;
+    border-color: black;
+}
+header{
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(255, 255, 255);
+}
+#campo-de-texto{
+    width: 430px;
+}
+#ingresar:hover{
+    background-color: pink;
+    color: white;
+    border: 10px black;
+}
+
+h1:hover{
+    color: pink;
+}
+
