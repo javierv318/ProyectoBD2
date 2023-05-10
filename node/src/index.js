@@ -7,7 +7,7 @@ const port = process.env.PORT || 9000;
 
 //routes
 app.get("/", (req, res)=> {
-    res.send("welcome to my api")
+    res.send("Welcome to my api")
 })
 
 //conectar mongo con mi app
