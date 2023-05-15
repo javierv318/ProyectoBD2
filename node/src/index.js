@@ -13,7 +13,7 @@ app.get("/", (req, res)=> {
 //conectar mongo con mi app
 mongoose.connect(
     process.env.MONGODB_URI
-).then(()=> console.log("Estas conectado a Mongo Alas")).catch((error) => console.error(error));
+).then(()=> console.log("Estas conectado a Mongo Atlas")).catch((error) => console.error(error));
 
 
 app.listen(port, ()=> console.log("Server is runnig on port ", port))
