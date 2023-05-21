@@ -9,7 +9,7 @@ const peliculasSchema = mongoose.Schema({
     release_year:{type: Number},
     age_certification:{type: String},
     runtime:{type: Number},
-    genres:{String}
+    genres:{type: String}
 });
 
 module.exports = mongoose.model('peliculas', peliculasSchema)

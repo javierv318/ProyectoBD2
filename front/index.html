@@ -5,88 +5,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Styles/style.css">
-
+    <link rel="stylesheet" href="Styles/style.css">
+    
     <title>Trabajo BD2</title>
 </head>
 
 <body>
     <header>
-        <h1>App Web consultas DynamoDB</h1>
+        <h1>Buscador de peliculas</h1>
     </header>
     <main>
 
-        <label for="campo-de-texto">Ingresa el valor de la búsqueda:</label><br>
-        <select name="option">
-            <option value="title">Título</option>
-            <option value="type">Tipo</option>
-            <option value="release_year">Año de lanzamiento</option>
-            <option value="genres">Generos</option>
-        </select>
-        <input type="text" placeholder="Busquemos" id="field">
-        <button id="ingresar">BUSCAR</button><br><br>
+        <label for="campo-de-texto">Ingresa la pelicula que buscas:</label><br>
+        <select name="" id="opcion">
 
-        <table class="hover-table">
-            <thead>
-                <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Título</th>
-                    <th scope="col">Tipo</th>
-                    <th scope="col">Año de lanzamiento</th>
-                    <th scope="col">Año de certificación</th>
-                    <th scope="col">Tiempo</th>
-                    <th scope="col">Generos</th>
-                    <th scope="col">Descripción</th>
-                </tr>
-            </thead>
-            <tbody><!--AQUÍ TIENE QUE IR UN FOR QUE LISTE TODO LO OBTENIDO EN EL BACK-->
-                <tr>
-                    <td>#</td>
-                    <td>Título</td>
-                    <td>Tipo</td>
-                    <td>Año de lanzamiento</td>
-                    <td>Año de certificación</td>
-                    <td>Tiempo</td>
-                    <td>Generos</td>
-                    <td>Descripción</td>
-                </tr>
-                <tr>
-                    <td>#</td>
-                    <td>Título</td>
-                    <td>Tipo</td>
-                    <td>Año de lanzamiento</td>
-                    <td>Año de certificación</td>
-                    <td>Tiempo</td>
-                    <td>Generos</td>
-                    <td>Descripción</td>
-                </tr>
-                <tr>
-                    <td>#</td>
-                    <td>Título</td>
-                    <td>Tipo</td>
-                    <td>Año de lanzamiento</td>
-                    <td>Año de certificación</td>
-                    <td>Tiempo</td>
-                    <td>Generos</td>
-                    <td>Descripción</td>
-                </tr>
-                <tr>
-                    <td>#</td>
-                    <td>Título</td>
-                    <td>Tipo</td>
-                    <td>Año de lanzamiento</td>
-                    <td>Año de certificación</td>
-                    <td>Tiempo</td>
-                    <td>Generos</td>
-                    <td>Descripción</td>
-                </tr>
-            </tbody>
-        </table>
+            <option>Titulo</option>
+            <option>Tipo</option>
+            <option>Año lanzamiento</option>
+            <option>Genero</option>
+        </select>
+        
+        <input type="text" placeholder="Ingresa aqui"  id="campo-de-texto">
+        <button id="ingresar">Enviar</button><br><br>
+        
+        <label for="respuesta">Respuesta</label><br>
+        <textarea id="respuesta" cols="65" rows="10" readonly>....</textarea>
 
     </main>
     <footer>
-        <p> <small>Creado por Javier, Juan David Bohorquez, Jaime Nanez</small> </p>
+        <p> <small>Creado por Javier Vazques, Christian Posada, Juan David Bohorquez, Jaime Nanez</small> </p>
     </footer>
+    <script src="Scripts/main.js" type="module"></script>
 </body>
 
 </html>
