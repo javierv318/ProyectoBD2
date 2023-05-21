@@ -8,10 +8,9 @@ router.get("/peliculas", (req, res)=>{
     .find()
     .then((data)=>res.json(data))
     .catch((error) => res.json({message: error}));
-})
+}) 
 
-
-//obtener una pelicula por su titulo
+//obtener una pelicula por el título seleccionada
 router.get("/peliculas/:title", (req, res) => {
     const { title } = req.params;
     peliculasSchema
@@ -22,7 +21,7 @@ router.get("/peliculas/:title", (req, res) => {
 
 
 //obtener una pelicula por su genero
-router.get("/peliculas", (req, res) => {
+router.get("/peliculas/:genres", (req, res) => {
     const { genres } = req.query;
     peliculasSchema
       .find({ genres: genres }) 

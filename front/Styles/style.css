@@ -1,27 +1,51 @@
-body{
-    color: white;
-    background-image: url("/front/image/background.jpg");    font-size: 25px;
+body {
+    color: whitesmoke;
+    background-image: url("../image/background.jpg");
+    font-size: 25px;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, pen SaOns, Helvetica Neue, sans-serif;
     text-align: center;
 }
 
-body label{
+body label {
     border-radius: 2px;
-    border-color: black;
+    border-color: whitesmoke;
 }
-header{
-    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: rgb(255, 255, 255);
+
+header {
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, pen SaOns, Helvetica Neue, sans-serif;
+    color: whitesmoke;
 }
-#campo-de-texto{
-    width: 430px;
-}
-#ingresar:hover{
+
+#ingresar:hover {
     background-color: pink;
     color: white;
     border: 10px black;
 }
 
-h1:hover{
+h1:hover {
     color: pink;
 }
 
+table {
+    margin: auto;
+    text-align: center;
+    width: 800px;
+    border-collapse: collapse;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+}
+
+.hover-table tbody tr:hover {
+    background-color: #f5f5f546;
+}
+
+.hover-table tbody td:hover {
+    background-color: #f5f5f556;
+}
