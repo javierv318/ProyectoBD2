@@ -19,13 +19,15 @@ app.use('/api', userRoutes);
 
 //routes
 app.get("/", (req, res)=> {
-    res.send("welcome to my api")
+    res.send("Welcome to my api")
 })
 
 //conectar mongo con mi app
 mongoose.connect(
     process.env.MONGODB_URI
+
 ).then(()=> console.log("Atlas está corriendo")).catch((error) => console.error(error));
+
 
 
 app.listen(port, ()=> console.log("Server is runnig on port ", port))
