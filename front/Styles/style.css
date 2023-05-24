@@ -1,7 +1,9 @@
 body{
     color: white;
-    background-image: url("/front/image/background.jpg");    font-size: 25px;
+    background-image: url("../image/background.jpg");
+    font-size: 25px;
     text-align: center;
+    height: 100%;
 }
 
 body label{
@@ -13,6 +15,7 @@ header{
     color: rgb(255, 255, 255);
 }
 #campo-de-texto{
+   
     width: 430px;
 }
 #ingresar:hover{
@@ -25,3 +28,7 @@ h1:hover{
     color: pink;
 }
 
+#respuesta{
+    height: 330px;
+    width: 625px;
+}

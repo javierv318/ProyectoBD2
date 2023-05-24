@@ -12,12 +12,20 @@
 
 <body>
     <header>
-        <h1>App Web consultas DynamoDB</h1>
+        <h1>Buscador de peliculas</h1>
     </header>
     <main>
 
-        <label for="campo-de-texto">Ingresa la movie:</label><br>
-        <input type="text" placeholder="Busquemos" id="campo-de-texto">
+        <label for="campo-de-texto">Ingresa la pelicula que buscas:</label><br>
+        <select name="" id="opcion">
+
+            <option>Titulo</option>
+            <option>Tipo</option>
+            <option>Año lanzamiento</option>
+            <option>Genero</option>
+        </select>
+        
+        <input type="text" placeholder="Ingresa aqui"  id="campo-de-texto">
         <button id="ingresar">Enviar</button><br><br>
         
         <label for="respuesta">Respuesta</label><br>
@@ -25,8 +33,9 @@
 
     </main>
     <footer>
-        <p> <small>Creado por Javier, Juan David Bohorquez, Jaime Nanez</small> </p>
+        <p> <small>Creado por Javier Vazques, Christian Posada, Juan David Bohorquez, Jaime Nanez</small> </p>
     </footer>
+    <script src="Scripts/main.js" type="module"></script>
 </body>
 
 </html>
